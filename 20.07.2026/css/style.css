@@ -1,0 +1,205 @@
+/* ==================================================
+RESET
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef2f7;
+    color:#333;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ==================================================
+TOPO
+================================================== */
+
+.topo{
+    background:#1f3b73;
+    color:#fff;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.topo h1{
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.subtitulo{
+    font-size:18px;
+}
+
+/* ==================================================
+CONTEÚDO
+================================================== */
+
+.container{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+    flex:1;
+}
+
+/* ==================================================
+CARTÕES
+================================================== */
+
+.cartao{
+    background:#fff;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.cartao h2{
+    color:#1f3b73;
+    margin-bottom:18px;
+}
+
+.cartao p{
+    line-height:1.6;
+}
+
+/* ==================================================
+IMAGEM
+================================================== */
+
+.imagem{
+    width:100%;
+    border-radius:10px;
+    margin:25px 0;
+}
+
+/* ==================================================
+OPÇÕES
+================================================== */
+
+.opcao{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    border:1px solid #d8d8d8;
+    border-radius:10px;
+    padding:18px;
+    margin-bottom:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.opcao:hover{
+    border-color:#1f3b73;
+    background:#f5f8fd;
+}
+
+.opcao input{
+    transform:scale(1.3);
+}
+
+.opcao div{
+    flex:1;
+}
+
+.opcao h3{
+    color:#1f3b73;
+    margin-bottom:6px;
+}
+
+.opcao span{
+    font-weight:bold;
+    color:#1f3b73;
+}
+
+/* ==================================================
+RESUMO
+================================================== */
+
+.resumo{
+    background:#f7f9fc;
+    border-radius:10px;
+    padding:20px;
+    margin:25px 0;
+}
+
+.resumo p{
+    margin-bottom:15px;
+    font-size:17px;
+}
+
+#precoTotal{
+    color:#0d8a3c;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* ==================================================
+BOTÕES
+================================================== */
+
+.botoes{
+    display:flex;
+    justify-content:space-between;
+    margin-top:35px;
+}
+
+button{
+    background:#1f3b73;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:14px 28px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+button:hover{
+    background:#35579c;
+    transform:translateY(-2px);
+}
+
+button:active{
+    transform:scale(.97);
+}
+
+/* ==================================================
+RODAPÉ
+================================================== */
+
+footer{
+    background:#1f3b73;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* ==================================================
+RESPONSIVO
+================================================== */
+
+@media(max-width:700px){
+.topo h1{
+    font-size:28px;
+}
+
+.opcao{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.botoes{
+    flex-direction:column;
+    gap:15px;
+}
+
+button{
+    width:100%;
+}}

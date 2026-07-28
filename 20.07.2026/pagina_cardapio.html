@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cardápio | Padaria Sabor & Tradição</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container">
+
+        <h2 class="logo">
+
+            🥖 Padaria Sabor & Tradição
+
+        </h2>
+
+        <nav>
+
+            <a href="pagina_inicial.html">Início</a>
+
+            <a href="#produtos">Produtos</a>
+
+            <a href="#bebidas">Bebidas</a>
+
+            <a href="#sobremesas">Sobremesas</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<section class="titulo">
+
+    <h1>
+
+        Nosso Cardápio
+
+    </h1>
+
+    <p>
+
+        Escolha seus produtos favoritos e monte seu pedido.
+
+    </p>
+
+</section>
+
+<!-- PRODUTOS -->
+
+<section id="produtos" class="grade">
+
+    <div class="produto">
+
+        <img src="https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&w=800"
+     alt="Pão Francês">
+
+        <h3>Pão Francês</h3>
+
+        <p>Pão fresquinho assado diariamente.</p>
+
+        <span>R$ 2,00</span>
+
+        <button class="adicionar"
+                data-nome="Pão Francês"
+                data-preco="2">
+
+            Adicionar
+
+        </button>
+
+    </div>
+
+    <div class="produto">
+
+        <img src="https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress&cs=tinysrgb&w=800"
+     alt="Croissant">
+
+        <h3>Croissant</h3>
+
+        <p>Massa folhada amanteigada.</p>
+
+        <span>R$ 8,00</span>
+
+        <button class="adicionar"
+                data-nome="Croissant"
+                data-preco="8">
+
+            Adicionar
+
+        </button>
+
+    </div>
+
+    <div class="produto">
+
+        <img src="https://images.pexels.com/photos/6605308/pexels-photo-6605308.jpeg?auto=compress&cs=tinysrgb&w=800"
+     alt="Pão de Queijo">
+
+        <h3>Pão de Queijo</h3>
+
+        <p>Macio por dentro e crocante por fora.</p>
+
+        <span>R$ 6,00</span>
+
+        <button class="adicionar"
+                data-nome="Pão de Queijo"
+                data-preco="6">
+
+            Adicionar
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- BEBIDAS -->
+
+<section id="bebidas" class="grade">
+
+    <div class="produto">
+
+        <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=800"
+     alt="Café Expresso">
+        <h3>Café Expresso</h3>
+
+        <p>Café intenso preparado na hora.</p>
+
+        <span>R$ 5,00</span>
+
+        <button class="adicionar"
+                data-nome="Café Expresso"
+                data-preco="5">
+
+            Adicionar
+
+        </button>
+
+    </div>
+
+    <div class="produto">
+
+        <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800"
+     alt="Cappuccino">
+
+        <h3>Cappuccino</h3>
+
+        <p>Leite vaporizado e café especial.</p>
+
+        <span>R$ 10,00</span>
+
+        <button class="adicionar"
+                data-nome="Cappuccino"
+                data-preco="10">
+
+            Adicionar
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- SOBREMESAS -->
+
+<section id="sobremesas" class="grade">
+
+    <div class="produto">
+
+        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=800"
+     alt="Bolo de Chocolate">
+        <h3>Bolo de Chocolate</h3>
+
+        <p>Receita caseira com cobertura cremosa.</p>
+
+        <span>R$ 12,00</span>
+
+        <button class="adicionar"
+                data-nome="Bolo de Chocolate"
+                data-preco="12">
+
+            Adicionar
+
+        </button>
+
+    </div>
+
+    <div class="produto">
+
+        <img src="https://images.pexels.com/photos/4686824/pexels-photo-4686824.jpeg?auto=compress&cs=tinysrgb&w=800"
+     alt="Sonho">
+
+        <h3>Sonho</h3>
+
+        <p>Recheado com creme artesanal.</p>
+
+        <span>R$ 9,00</span>
+
+        <button class="adicionar"
+                data-nome="Sonho"
+                data-preco="9">
+
+            Adicionar
+
+        </button>
+
+    </div>
+
+</section>
+
+<section class="resumo">
+
+    <h2>
+
+        Pedido Atual
+
+    </h2>
+
+    <p>
+
+        Itens adicionados:
+
+    </p>
+
+    <ul id="listaPedido">
+
+        <li>Nenhum produto adicionado.</li>
+
+    </ul>
+
+    <h3>
+
+        Total:
+        <span id="valorTotal">
+
+            R$ 0,00
+
+        </span>
+
+    </h3>
+
+</section>
+
+<div class="botoes">
+
+    <button id="botaoVoltar">
+
+        ← Voltar
+
+    </button>
+
+    <button id="botaoFinalizar">
+
+        Finalizar Pedido →
+
+    </button>
+
+</div>
+
+<footer>
+
+    <p>
+
+        © 2026 Padaria Sabor & Tradição
+
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
